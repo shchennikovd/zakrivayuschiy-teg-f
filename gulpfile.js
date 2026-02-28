@@ -16,7 +16,7 @@ exports.html = html;
 
 
 function css() {
-  return gulp.src('src/blocks/**/*.css')
+  return gulp.src('src/styles/**/*.css')
         .pipe(plumber())
         .pipe(concat('bundle.css'))
                 .pipe(gulp.dest('dist/'))

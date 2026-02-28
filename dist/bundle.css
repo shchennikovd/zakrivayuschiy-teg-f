@@ -1,0 +1,167 @@
+/* Опишите в этом файле все keyframes для проекта и стили анимаций иконки Like.
+
+Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
+✦ like-icon — для svg-иконки анимированного сердца
+✦ card__like-button — для кнопки Like рядом с иконкой
+✦ card__icon-button — для кнопки, оборачивающей иконку
+✦ card__icon-button — для кнопки, оборачивающей иконку
+✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
+✦ button__text — для обозначения текстового элемента внутри кнопки
+
+*/
+/* В этом файле уже написаны некоторые базовые стили, которые сбрасывают или преобразуют дефольное браузерное поведение.
+Здесь же лежит утилитарный класс visually-hidden на случай, если нужно скрыть какой-то элемент, но оставить доступным для скринридера.
+Вы можете изменять этот файл или дополнять. Но скорее всего, вам это не потребуется. */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input {
+  color: currentColor;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+/* Здесь вы напишете основную часть стилей страницы.
+
+Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
+✦ like-icon — для svg-иконки анимированного сердца
+✦ card__like-button — для кнопки Like рядом с иконкой
+✦ card__icon-button — для кнопки, оборачивающей иконку
+✦ card__icon-button — для кнопки, оборачивающей иконку
+✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
+✦ button__text — для обозначения текстового элемента внутри кнопки
+
+*/
+
+.page {
+  min-inline-size: 320px;
+  display: grid;
+  justify-self: center;
+  gap: 100px;
+  min-block-size: 100dvb;
+  font-family: var(--font-main);
+  background-image: var(--page-background);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-accent);
+  margin-top: 100px;
+  background-color: #fff;
+  width: var(--header-width);
+  height: var(--header-height);
+}
+
+.logo-group {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.card-list {
+  display: grid;
+  gap: 50px;
+}
+
+.card {
+  background-color: #fff;
+  border: 2px solid #000;
+  display: grid;
+  width: var(--card-width);
+}
+
+.card__title {
+  padding: 4px 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.card__image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  display: block;
+  object-fit: cover;
+}
+
+.content__text {
+  padding: 25px 25px 12.5px 25px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 117%;
+}
+
+.card__like-button {
+  margin: 12.5px 25px 25px 0;
+  justify-self: flex-end;
+  background: transparent;
+  font-family: var(--font-accent);
+}
+:root {
+  /* шрифты */
+  --font-main: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-accent: 'PressStart2P', monospace;
+  --font-weight-text: 400;
+  --font-weight-title: 700;
+  --main-title-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  --secondary-title-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  --header-width: clamp(375px, 26.06px + 92.96vw, 700px);
+  --header-height: clamp(327px, 312.56px + 3.85vw, 368px);
+  --card-width: clamp(375px, 26.06px + 92.96vw, 700px);
+  --page-background:  repeating-linear-gradient(
+      to right,
+      #d3d3d3 0 2px,
+      transparent 2px 4px
+    ),
+    
+      repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+    
+      linear-gradient(to bottom, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
+}
