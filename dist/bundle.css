@@ -46,6 +46,8 @@ input {
   color: currentColor;
   font-family: inherit;
   font-size: inherit;
+  padding: 0;
+  margin: 0;
 }
 
 ul,
@@ -104,7 +106,10 @@ ol {
   align-items: center;
 }
 
-
+.main {
+  display: grid;
+  gap: 50px;
+}
 
 .card-list {
   display: grid;
@@ -124,11 +129,43 @@ ol {
   font-weight: 700;
 }
 
+.card__image-wrapper {
+  position: relative;
+}
+
 .card__image {
   width: 100%;
   aspect-ratio: 1 / 1;
   display: block;
   object-fit: cover;
+}
+
+.card__label {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  opacity: 0.5;
+  mix-blend-mode: hard-light;
+  font-family: var(--font-accent), monospace;
+  /* или другой пиксельный */
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+@supports (-webkit-text-stroke: 1px white) {
+  .card__label {
+    color: transparent;
+    -webkit-text-stroke: 1px var(--label-stroke-color);
+  }
+}
+
+@supports not (-webkit-text-stroke: 1px white) {
+  .card__label {
+    color: white;
+    text-shadow: -1px -1px 0 var(--label-stroke-color),
+      1px -1px 0 var(--label-stroke-color), -1px 1px 0 var(--label-stroke-color),
+      1px 1px 0 var(--label-stroke-color);
+  }
 }
 
 .content__text {
@@ -143,6 +180,38 @@ ol {
   justify-self: flex-end;
   background: transparent;
   font-family: var(--font-accent);
+  padding: 5px 0;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.button__text {
+  font-family: var(--font-accent);
+  font-size: 14px;
+  line-height: 90%;
+}
+
+.card__button-text--like {
+  padding: 12.5px 37px;
+  outline: 2px solid #000;
+}
+
+.main__save-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.main__icon-save {
+  margin-top: 17px;
+}
+
+.button__text--save {
+  padding: 0 20px 17px 20px;
 }
 :root {
   /* шрифты */
@@ -155,6 +224,7 @@ ol {
   --header-width: clamp(375px, 26.06px + 92.96vw, 700px);
   --header-height: clamp(327px, 312.56px + 3.85vw, 368px);
   --card-width: clamp(375px, 26.06px + 92.96vw, 700px);
+  --label-stroke-color: #fff;
   --page-background:  repeating-linear-gradient(
       to right,
       #d3d3d3 0 2px,
