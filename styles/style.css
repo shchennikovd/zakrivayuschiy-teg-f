@@ -1,3 +1,4 @@
+/* stylelint-disable rule-empty-line-before */
 /* Здесь вы напишете основную часть стилей страницы.
 
 Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
@@ -17,6 +18,8 @@
   gap: 100px;
   min-block-size: 100dvb;
   font-family: var(--font-main);
+  font-weight: var(--font-weight-text);
+  font-variation-settings: 'wght' var(--font-weight-text);
   background-image: var(--page-background);
   background-size: cover;
   background-attachment: fixed;
@@ -198,6 +201,38 @@
   border: 2px solid #000;
   background: transparent;
   padding: 12px 0;
+}
+
+.filter-grayscale {
+  filter: grayscale(100%);
+}
+
+.filter-sepia {
+  filter: sepia(60%);
+}
+
+.filter-contrast {
+  filter: contrast(150%);
+}
+
+.filter-brightness {
+  filter: brightness(120%);
+}
+
+.filter-saturate {
+  filter: saturate(200%);
+}
+
+.filter-hue-rotate {
+  filter: hue-rotate(90deg);
+}
+
+.filter-multi-color {
+  filter: invert(80%) sepia(30%) hue-rotate(180deg) saturate(150%);
+}
+
+.filter-blur-brightness {
+  filter: blur(1px) brightness(110%);
 }
 
 @media (width >= 1440px) {
