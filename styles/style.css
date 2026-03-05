@@ -43,6 +43,7 @@
 .main {
   display: grid;
   gap: 50px;
+  justify-items: center;
 }
 
 .card-list {
@@ -102,7 +103,7 @@
 }
 
 .content__text {
-  padding: 25px 25px 12.5px 25px;
+  padding: 25px 25px 12.5px;
   font-size: 18px;
   font-weight: 400;
   line-height: 117%;
@@ -152,6 +153,10 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
+  width: clamp(306px, 296px + 2.72vw, 335px);
+  margin-bottom: 100px;
+  outline: 2px solid #000;
+  border: none;
 }
 
 .main__icon-save {
@@ -159,7 +164,7 @@
 }
 
 .button__text--save {
-  padding: 0 20px 17px 20px;
+  padding-bottom: 17px;
 }
 
 .modal {
@@ -193,4 +198,21 @@
   border: 2px solid #000;
   background: transparent;
   padding: 12px 0;
+}
+
+@media (width >= 1440px) {
+  .main__save-button {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .main__icon-save {
+    margin: 17px 0;
+    width: 21px;
+    height: 21px;
+  }
+
+  .button__text--save {
+    padding: 0;
+  }
 }

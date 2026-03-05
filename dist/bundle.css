@@ -169,7 +169,7 @@ ol {
 }
 
 .content__text {
-  padding: 25px 25px 12.5px 25px;
+  padding: 25px 25px 12.5px;
   font-size: 18px;
   font-weight: 400;
   line-height: 117%;
@@ -211,11 +211,12 @@ ol {
 }
 
 .button__text--save {
-  padding: 0 20px 17px 20px;
+  padding: 0 20px 17px;
 }
+
 :root {
   /* шрифты */
-  --font-main: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-main: 'Inter', system-ui, -apple-system, blinkmacsystemfont, sans-serif;
   --font-accent: 'PressStart2P', monospace;
   --font-weight-text: 400;
   --font-weight-title: 700;
@@ -225,13 +226,11 @@ ol {
   --header-height: clamp(327px, 312.56px + 3.85vw, 368px);
   --card-width: clamp(375px, 26.06px + 92.96vw, 700px);
   --label-stroke-color: #fff;
-  --page-background:  repeating-linear-gradient(
+  --page-background: repeating-linear-gradient(
       to right,
       #d3d3d3 0 2px,
       transparent 2px 4px
     ),
-    
-      repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
-    
-      linear-gradient(to bottom, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
+    repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+    linear-gradient(to bottom, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
 }

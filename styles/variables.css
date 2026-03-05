@@ -1,6 +1,6 @@
 :root {
   /* шрифты */
-  --font-main: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-main: 'Inter', system-ui, -apple-system, blinkmacsystemfont, sans-serif;
   --font-accent: 'PressStart2P', monospace;
   --font-weight-text: 400;
   --font-weight-title: 700;
