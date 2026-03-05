@@ -1,0 +1,26 @@
+:root {
+  /* шрифты */
+  --font-main: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-accent: 'PressStart2P', monospace;
+  --font-weight-text: 400;
+  --font-weight-title: 700;
+
+  --main-title-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  --secondary-title-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+
+  --header-width: clamp(375px, 26.06px + 92.96vw, 700px);
+  --header-height: clamp(327px, 312.56px + 3.85vw, 368px);
+  --card-width: clamp(375px, 26.06px + 92.96vw, 700px);
+  --label-stroke-color: #fff;
+
+  --page-background:
+  /* вертикальные полосы (слева направо) */ repeating-linear-gradient(
+      to right,
+      #d3d3d3 0 2px,
+      transparent 2px 4px
+    ),
+    /* горизонтальные полосы (сверху вниз) */
+      repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+    /* градиент насыщенности сверху вниз */
+      linear-gradient(to bottom, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
+}

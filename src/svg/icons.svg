@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="icon-save" viewBox="0 0 28 28">
+    <path d="M6.46094 10.7695H4.30664V2.1543H2.1543V25.8457H4.30664V15.0771H6.46094V28H0V0H6.46094V10.7695Z" fill="currentColor"/>
+    <path d="M19.3838 28H6.46094L6.46191 25.8457H19.3838V28Z" fill="currentColor"/>
+    <path d="M25.8467 4.30762H28V28H19.3838V25.8457H21.5391V17.2314H19.3848V15.0771H23.6924V25.8457H25.8457V4.30859H23.6924V2.1543H25.8467V4.30762Z" fill="currentColor"/>
+    <path d="M19.3848 17.2314H6.46191L6.46094 15.0771H19.3848V17.2314Z" fill="currentColor"/>
+    <path d="M19.3838 2.1543H17.2305V8.61523H19.3838V10.7695H6.46094L6.46191 8.61523H15.0762V2.1543H6.46191L6.46094 0H19.3838V2.1543Z" fill="currentColor"/>
+    <path d="M23.6924 2.1543H21.5391V10.7695H19.3838V0H23.6924V2.1543Z" fill="currentColor"/>
+  </symbol>
+
+    <symbol id="heart" viewBox="0 0 27 24">
+    <path d="M15 21V24H12V21H15Z" fill="currentColor"/>
+    <path d="M12 21H9V18H12V21Z" fill="currentColor"/>
+    <path d="M18 21H15V18H18V21Z" fill="currentColor"/>
+    <path d="M9 18H6V15H9V18Z" fill="currentColor"/>
+    <path d="M21 18H18V15H21V18Z" fill="currentColor"/>
+    <path d="M6 15H3V12H6V15Z" fill="currentColor"/>
+    <path d="M24 15H21V12H24V15Z" fill="currentColor"/>
+    <path d="M3 12H0V3H3V12Z" fill="currentColor"/>
+    <path d="M27 12H24V3H27V12Z" fill="currentColor"/>
+    <path d="M15 6H12V3H15V6Z" fill="currentColor"/>
+    <path d="M12 3H3V0H12V3Z" fill="currentColor"/>
+    <path d="M24 3H15V0H24V3Z" fill="currentColor"/>
+  </symbol>
+</svg>

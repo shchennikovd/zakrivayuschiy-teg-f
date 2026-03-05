@@ -1,0 +1,148 @@
+/* Здесь вы напишете основную часть стилей страницы.
+
+Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
+✦ like-icon — для svg-иконки анимированного сердца
+✦ card__like-button — для кнопки Like рядом с иконкой
+✦ card__icon-button — для кнопки, оборачивающей иконку
+✦ card__icon-button — для кнопки, оборачивающей иконку
+✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
+✦ button__text — для обозначения текстового элемента внутри кнопки
+
+*/
+
+.page {
+  min-inline-size: 320px;
+  display: grid;
+  justify-self: center;
+  gap: 100px;
+  min-block-size: 100dvb;
+  font-family: var(--font-main);
+  background-image: var(--page-background);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-accent);
+  margin-top: 100px;
+  background-color: #fff;
+  width: var(--header-width);
+  height: var(--header-height);
+}
+
+.logo-group {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main {
+  display: grid;
+  gap: 50px;
+}
+
+.card-list {
+  display: grid;
+  gap: 50px;
+}
+
+.card {
+  background-color: #fff;
+  border: 2px solid #000;
+  display: grid;
+  width: var(--card-width);
+}
+
+.card__title {
+  padding: 4px 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.card__image-wrapper {
+  position: relative;
+}
+
+.card__image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  display: block;
+  object-fit: cover;
+}
+
+.card__label {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  opacity: 0.5;
+  mix-blend-mode: hard-light;
+  font-family: var(--font-accent), monospace; /* или другой пиксельный */
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+@supports (-webkit-text-stroke: 1px white) {
+  .card__label {
+    color: transparent;
+    -webkit-text-stroke: 1px var(--label-stroke-color);
+  }
+}
+
+@supports not (-webkit-text-stroke: 1px white) {
+  .card__label {
+    color: white;
+    text-shadow: -1px -1px 0 var(--label-stroke-color),
+      1px -1px 0 var(--label-stroke-color), -1px 1px 0 var(--label-stroke-color),
+      1px 1px 0 var(--label-stroke-color);
+  }
+}
+
+.content__text {
+  padding: 25px 25px 12.5px 25px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 117%;
+}
+
+.card__like-button {
+  margin: 12.5px 25px 25px 0;
+  justify-self: flex-end;
+  background: transparent;
+  font-family: var(--font-accent);
+  padding: 5px 0;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.button__text {
+  font-family: var(--font-accent);
+  font-size: 14px;
+  line-height: 90%;
+}
+
+.card__button-text--like {
+  padding: 12.5px 37px;
+  outline: 2px solid #000;
+}
+
+.main__save-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.main__icon-save {
+  margin-top: 17px;
+}
+
+.button__text--save {
+  padding: 0 20px 17px 20px;
+}
