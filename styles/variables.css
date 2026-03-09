@@ -12,6 +12,8 @@
   --header-height: clamp(327px, 312.56px + 3.85vw, 368px);
   --card-width: clamp(375px, 26.06px + 92.96vw, 700px);
   --label-stroke-color: #fff;
+  --contour-color: black;
+  --animation-fill-color: #f00;
 
   --page-background:
   /* вертикальные полосы (слева направо) */ repeating-linear-gradient(

@@ -153,6 +153,7 @@ ol {
 }
 
 @supports (-webkit-text-stroke: 1px white) {
+
   .card__label {
     color: transparent;
     -webkit-text-stroke: 1px var(--label-stroke-color);
@@ -160,6 +161,7 @@ ol {
 }
 
 @supports not (-webkit-text-stroke: 1px white) {
+
   .card__label {
     color: white;
     text-shadow: -1px -1px 0 var(--label-stroke-color),
