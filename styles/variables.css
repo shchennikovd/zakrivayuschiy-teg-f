@@ -1,9 +1,9 @@
 :root {
   /* шрифты */
   --font-main: 'Inter', system-ui, -apple-system, blinkmacsystemfont, sans-serif;
-  --font-accent: 'PressStart2P', monospace;
-  --font-weight-text: 400;
-  --font-weight-title: 700;
+  --font-accent: 'PressStart2P', fantasy;
+  --font-weight-text: 410;
+  --font-weight-title: 715;
 
   --main-title-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   --secondary-title-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
